@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin:
+    0; padding: 0; } .container { width: 80%; margin: 20px auto; } .post-box {
+    background-color: #fff; border: 1px solid #ddd; border-radius: 5px;
+    padding: 20px; margin-bottom: 20px; } .post-box h2 { margin-top: 0; color:
+    #333; } .post-box p { margin: 10px 0; color: #666; }

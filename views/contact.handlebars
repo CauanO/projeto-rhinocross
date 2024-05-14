@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -53,24 +53,18 @@
           </div>
         </div>
         <div class="col-lg-5">
-          <form id="contact-form" action="https://api.sheetmonkey.io/form/neqNH4bRFCsSuiDiXYCk31" method="post">
+          <form id="contact-form" action="/add" method="POST">
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
                   <label for="NOME">Nome</label>
-                  <input type="name" name="name" id="name" placeholder="Digite seu Nome" autocomplete="on" required>
+                  <input type="name" name="nome" id="nome" placeholder="Digite seu Nome" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
                   <label for="EMAIL">Email</label>
                   <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Digite seu Email" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <label for="DATA DE NASCIMENTO">Data de Nascimento</label>
-                  <input type="date" name="birthdate" id="birthdate" placeholder="Data de Nascimento..." autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -87,6 +81,18 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
+                  <label for="CEP">Logradouro</label>
+                  <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro" autocomplete="postal-code" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="CEP">Bairro</label>
+                  <input type="text" name="bairro" id="bairro" placeholder="Bairro" autocomplete="postal-code" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
                   <label for="JA TREINA">Você já treina?</label>
                   <select name="treina" id="treina" required>
                     <option value="sim">Sim</option>
@@ -98,7 +104,7 @@
               <div class="col-lg-12">
                 <fieldset>
                   <label for="OBSERVAÇÃO">Observação</label>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  <textarea name="message" id="message" placeholder="Escreva aqui.."></textarea>
                 </fieldset>
               </div>
               <br>
@@ -113,23 +119,16 @@
       </div>
     </div>
   </div>
+  {{>footer}}
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p> CT RhinoCross</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
+           {{!-- JavaScript --}}
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="/js/isotope.min.js"></script>
   <script src="/js/owl-carousel.js"></script>
   <script src="/js/counter.js"></script>
   <script src="/js/custom.js"></script>
+  <script src="/js/api.js"></script>
 
   </body>
 </html>
