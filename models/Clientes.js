@@ -32,4 +32,4 @@ const Cliente = db.sequelize.define('clientes', {
 
 module.exports = Cliente
 
-// Cliente.sync({force: true})
+// Cliente.sync({force: true}) FORÇA A CRIAÇÃO DA TABELA
