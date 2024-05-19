@@ -1,25 +1,19 @@
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/dados.css">
-    <title>Dados dos Clientes</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Clientes</h1>
-      {{#each posts}}
-        <div class="post-box">
-          <h2>{{nome}}</h2>
-          <p>Email: {{email}}</p>
-          <p>Telefone: {{telefone}}</p>
-          <p>CEP: {{cep}}</p>
-          <p>Logradouro: {{logradouro}}</p>
-          <p>Bairro: {{bairro}}</p>
-          <p>Já treina?: {{treina}}</p>
-          <p>Menssagem: {{message}}</p>
-        </div>
-      {{/each}}
+<body>
+  <div class="container">
+    <h1>Clientes</h1>
+    {{#each posts}}
+    <div class="post-box">
+      <h2>{{nome}}</h2>
+      <p>Email: {{email}}</p>
+      <p>Telefone: {{telefone}}</p>
+      <p>CEP: {{cep}}</p>
+      <p>Logradouro: {{logradouro}}</p>
+      <p>Bairro: {{bairro}}</p>
+      <p>Já treina?: {{treina}}</p>
+      <p>Menssagem: {{message}}</p>
     </div>
-  </body>
+    {{/each}}
+  </div>
+</body>
+
 </html>
