@@ -8,7 +8,7 @@ document.getElementById('cep').addEventListener('input', function() {
     ajax.onload = function () {
         let obj = JSON.parse(this.responseText);
         let texto = JSON.stringify(obj);
-        document.getElementById('logradouro').value = (obj.uf)
+        document.getElementById('logradouro').value = (obj.logradouro)
         document.getElementById('bairro').value = (obj.bairro)
     }
 })
